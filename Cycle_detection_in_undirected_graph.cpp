@@ -39,7 +39,7 @@ int32_t main()
         adj[y].push_back(x);
     }
 
-       // initially call dfs with source ,  its parent to be some node which is not present in graph here it's 0.
+       // initially call dfs with source ,  its parent to be some node which is not present in graph here it's -1.
        for(int i=0; i<=n; i++)
        {
            if(vis[i]== false)
