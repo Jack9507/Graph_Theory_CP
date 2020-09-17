@@ -28,8 +28,8 @@ void dfs(int curr)
                 dfs(x);
             }
 
-            else if(vis[x] == 1)
-                cycle =true;
+            else if(vis[x] == 1)        // here we don't need to check 'x' with parent because there can be dedicated directed edge to parent node.
+                cycle =true;            //  for ex.  0->1 and 1->0 will form a loop
         }
 
     vis[curr]= 2;       //  current node is popped out from call stack
